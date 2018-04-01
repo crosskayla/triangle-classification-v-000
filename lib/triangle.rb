@@ -17,7 +17,7 @@ class Triangle
       @kind = :equilateral
       binding.pry
     end
-    
+
   end
 
   class TriangleError < StandardError
