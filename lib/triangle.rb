@@ -11,10 +11,8 @@ class Triangle
   end
 
   def kind
-    if @sides[1]+@sides[2] <= @sides[0]
+    if @sides[1]+@sides[2] <= @sides[0] || !@sides.detect{|x| x <= 0}
       raise TriangleError
-    elsif !@sides.detect{|x| x <= 0}
-      binding.pry
     end
 
   end
