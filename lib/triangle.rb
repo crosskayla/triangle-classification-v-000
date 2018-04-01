@@ -1,3 +1,5 @@
+require 'pry'
+
 class Triangle
 
   attr_accessor :first, :second, :third
@@ -6,6 +8,7 @@ class Triangle
 
   def initialize(first, second, third)
     @sides << first << second << third
+    binding.pry
   end
 
   def kind
