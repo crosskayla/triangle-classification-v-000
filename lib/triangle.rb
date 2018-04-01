@@ -17,6 +17,8 @@ class Triangle
       @kind = :equilateral
     elsif @sides.uniq < @sides
       @kind = :isosceles
+    else
+      @kind = :scalene
     end
     @kind
   end
