@@ -14,6 +14,7 @@ class Triangle
     if @sides[1]+@sides[2] <= @sides[0]
       raise TriangleError
     elsif @sides.detect(|x| x <= 0).empty?
+      binding.pry
     end
 
   end
