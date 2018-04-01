@@ -15,7 +15,7 @@ class Triangle
       raise TriangleError
     elsif @sides[0] == @sides[1] && @sides[0] == @sides[2]
       @kind = :equilateral
-    elsif @sides.uniq.size < @sides
+    elsif @sides.uniq.size < @sides.size
       @kind = :isosceles
     else
       @kind = :scalene
