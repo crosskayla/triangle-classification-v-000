@@ -8,7 +8,6 @@ class Triangle
     @sides = []
     @sides += [first, second, third]
     @sides.sort!
-    binding.pry
   end
 
   def kind
