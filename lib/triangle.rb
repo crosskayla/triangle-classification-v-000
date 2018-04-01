@@ -11,7 +11,7 @@ class Triangle
   end
 
   def kind
-    if @sides[0]+@sides[1] <= @sides[0] || @sides.detect{|x| x <= 0}
+    if @sides[0] + @sides[1] <= @sides[0] || @sides.detect{|x| x <= 0}
       raise TriangleError
     elsif @sides[0] == @sides[1] && @sides[0] == @sides[2]
       @kind = :equilateral
