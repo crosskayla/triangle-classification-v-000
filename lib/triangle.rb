@@ -8,8 +8,6 @@ class Triangle
     @third = third
   end
 
-  end
-
   def kind
   end
 
