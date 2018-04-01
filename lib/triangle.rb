@@ -1,5 +1,6 @@
 class Triangle
-  # write code here
+
+  attr_accessor sides
 
   def initialize(first, second, third)
   end
