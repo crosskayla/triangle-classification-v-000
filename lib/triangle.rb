@@ -1,11 +1,12 @@
 class Triangle
 
-  attr_reader :sides
-
-  @sides = []
+  attr_accessor :first, :second, :third
 
   def initialize(first, second, third)
-    sides = []
+    @first = first
+    @second = second
+    @third = third
+  end
 
   end
 
