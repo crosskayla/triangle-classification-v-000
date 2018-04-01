@@ -4,10 +4,9 @@ class Triangle
 
   attr_accessor :first, :second, :third
 
-  @sides = []
-
   def initialize(first, second, third)
-    @sides << first << second << third
+    @sides = []
+    @sides += [first, second, third]
     binding.pry
   end
 
