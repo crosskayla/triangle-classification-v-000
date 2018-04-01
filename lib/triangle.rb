@@ -14,7 +14,7 @@ class Triangle
   def kind
     if !@first > 0 || !@second > 0 || !@third > 0
       raise TriangleError
-    elsif @first+@second > @third
+    end
 
   end
 
