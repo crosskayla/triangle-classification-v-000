@@ -11,7 +11,7 @@ class Triangle
   end
 
   def kind
-    if !@first > 0 || !@second > 0 || !@third > 0
+    if @sides[1]+@sides[2] <= sides[3]
       raise TriangleError
     end
 
