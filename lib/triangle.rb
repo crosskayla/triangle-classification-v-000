@@ -2,7 +2,7 @@ require 'pry'
 
 class Triangle
 
-  attr_accessor :first, :second, :third
+  attr_accessor :kind
 
   def initialize(first, second, third)
     @sides = []
@@ -13,8 +13,8 @@ class Triangle
   def kind
     if @sides[1]+@sides[2] <= @sides[0] || !@sides.detect{|x| x <= 0}
       raise TriangleError
-    elsif @sides[0] == @sides[1] && @sides[0] && @sides[2] 
-      "yay"
+    elsif @sides[0] == @sides[1] && @sides[0] && @sides[2]
+      @kind = :equilateral
     end
 
   end
