@@ -7,6 +7,7 @@ class Triangle
   def initialize(first, second, third)
     @sides = []
     @sides += [first, second, third]
+    @sides.sort!
     binding.pry
   end
 
