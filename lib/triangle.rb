@@ -1,8 +1,12 @@
 class Triangle
 
-  attr_accessor sides
+  attr_reader :sides
+
+  @sides = []
 
   def initialize(first, second, third)
+    sides = []
+
   end
 
   def kind
